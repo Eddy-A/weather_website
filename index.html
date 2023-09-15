@@ -4,25 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
 <body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>The Weather App</h1>
+            <h3>Enter the city and country below to know the current weather provided by openweathermap.</h3>
+            <a href="#" class="btn">Get Started</a>
+
+
+            <form id="weather-form">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+                <button type="submit">Get Weather</button>
+            </form>
+        </div>
+    </header>
     <div class="container">
-        <h1>Weather App</h1>
-        <form id="weather-form">
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" required>
-            <label for="country">Country:</label>
-            <input type="text" id="country" name="country" required>
-            <button type="submit">Get Weather</button>
-        </form>
+        
         <div id="weather-info">
             <!-- Weather data will be displayed here -->
         </div>
+        
     </div>
     <script>
         
-document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
     const weatherForm = document.getElementById('weather-form');
     const weatherInfo = document.getElementById('weather-info');
 
