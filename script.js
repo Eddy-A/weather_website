@@ -1,5 +1,5 @@
 // Replace this line with your API URL
-const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}`;
 
 // Use a CORS proxy to fetch the data
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
